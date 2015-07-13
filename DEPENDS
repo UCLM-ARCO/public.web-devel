@@ -1,0 +1,9 @@
+deb:https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.3_x86_64.deb
+deb:python-bottle
+deb:python-pyinotify
+deb:python-djangorestframework
+deb:python-factory-boy
+deb:nmap
+deb:nodejs-legacy
+deb:npm
+pip:django

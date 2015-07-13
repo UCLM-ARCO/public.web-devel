@@ -1,0 +1,10 @@
+syntax: glob
+
+*~
+\.\#*
+*.pyc
+doc/_build
+*.sqlite3
+*/migrations/
+*/static/generated
+*/tiles/*
