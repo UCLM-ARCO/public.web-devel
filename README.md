@@ -1,1 +1,1 @@
-Ejemplos, ejercicios y documentación del curso de "Introducción al curso de desarrollo web"
+Ejemplos, ejercicios y documentación del curso de "Introducción al desarrollo web"
