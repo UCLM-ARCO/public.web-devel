@@ -1,5 +1,7 @@
 # -*- mode: makefile-gmake; coding: utf-8 -*-
 
+include ../common.mk
+
 all:
 
 run:

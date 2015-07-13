@@ -59,6 +59,19 @@ En este ejemplo hay dos vistas:
 
 .. literalinclude:: ../025-simple-forms/prj/app/views.py
 
+.. warning::
+   La vista ``print_form`` viola el patrón `Post/Redirect/Get
+   <https://en.wikipedia.org/wiki/Post/Redirect/Get>`_ que dice que después de tratar un
+   mensaje POST siempre se debe hacer una redirección.
+
+   Problema:
+
+   .. image:: https://upload.wikimedia.org/wikipedia/commons/f/f3/PostRedirectGet_DoubleSubmitProblem.png
+
+   Solución:
+
+   .. image:: https://upload.wikimedia.org/wikipedia/commons/3/3c/PostRedirectGet_DoubleSubmitSolution.png
+
 
 [``prj/app/templates/simple-form.html``]
 
@@ -69,6 +82,9 @@ En este ejemplo hay dos vistas:
 Para ejecutar la aplicación::
 
   prj$ ./manage.py runserver
+
+.. image:: figures/chrome-simple-forms.png
+
 
 Por último, un test automático sencillo que comprueba que el comentario del página incluye
 el valor indicado en el formulario, lo que demuestra que la vista en el servidor se
@@ -86,4 +102,8 @@ Para ejecutar el test::
 Ejercicios
 ==========
 
-* Guarda los datos del formulario (en memoria) y utilízalos para mostrarlos como valores por defecto cuando se solicite de nuevo el formulario.
+1. Aplica el patrón Post/Redirect/Get al ejemplo, es decir:
+
+   * La primera vista muestra el formulario (ruta /)
+   * El formulario ejecuta POST a usa segunda vista (ruta /save), que almacena el contenido en memoria.
+   * La vista anterior redirecciona a una tercera vista (ruta /show) que muestra los datos almacenados.
