@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Perfil de {{ firstname }} {{ lastname }}</h2>
+      <hr>
+
+      <div class="row">
+	<div class="col-sm-2 text-center">
+	  <i class="fa fa-5x fa-user" style="color: {{ color }}"></i>
+	</div>
+
+	<div class="col-sm-10">
+	  <b>Nombre de Usuario:</b> {{ username }}<br>
+	  <b>Fecha de nacimiento:</b> {{ birth_date }}<br>
+	  <b>Ubicación:</b> {{ location }}<br>
+	</div>
+
+      </div>
+
+      <hr>
+
+    </div>
+  </body>
+
+</html>
+
+<!--
+    Local Variables:
+    truncate-lines: true
+    End:
+  -->
