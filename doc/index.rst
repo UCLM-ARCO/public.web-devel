@@ -16,6 +16,8 @@ Contents:
    web-framework.rst
    django-hello.rst
    simple-forms.rst
+   bootstrap-forms.rst
+   basic-persistence.rst
 
 
 Indices and tables
