@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <style>
+      .logo {
+         font-size: 10em;
+         padding-top: 250px;
+         color: #901010;
+      }
+      h2 {
+         padding-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <form method="POST" action="/register/">
+	{% csrf_token %}
+
+	<div class="row">
+	  <div class="col-sm-4">
+	    <div class="logo">
+	      <i class="fa fa-rotate-270 fa-space-shuttle"></i>
+	    </div>
+	  </div>
+
+	  <div class="col-sm-8">
+	    <h2 class="text-center">Crea tu cuenta</h2>
+
+	    <div class="panel panel-default">
+	      <div class="panel-heading">
+
+		<b>Nombre</b>
+		<div class="form-group">
+		  <div class="form-inline">
+		    <input class="form-control" type="text" required
+			   name="firstname" placeholder="Nombre"/>
+		    <input class="form-control" type="text" required
+			   name="lastname" placeholder="Apellidos" />
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <b>Nombre de usuario</b>
+		  <input class="form-control" type="text" required
+			 name="username" />
+		</div>
+
+		<div class="form-group">
+		  <b>Contraseña</b>
+		  <div class="input-group">
+		    <div class="input-group-addon"><i class="fa fa-fw fa-key"></i></div>
+		    <input class="form-control" type="password" required
+			   name="password" />
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <b>Confirma tu contraseña</b>
+		  <div class="input-group">
+		    <div class="input-group-addon"><i class="fa fa-fw fa-key"></i></div>
+		    <input class="form-control" type="password" required
+			   name="confirm-password" />
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <b>Fecha de nacimiento</b>
+		  <div class="input-group">
+		    <div class="input-group-addon"><i class="fa fa-fw fa-calendar"></i></div>
+		    <input class="form-control" type="date" required
+			   name="birth_date" />
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <b>Ubicación</b>
+		  <div class="input-group">
+		    <div class="input-group-addon"><i class="fa fa-fw fa-map-marker"></i></div>
+		    <select class="form-control" name="location">
+		      <option value="spain">España</option>
+		      <option value="france">Francia</option>
+		      <option value="portugal">Portugal</option>
+		    </select>
+		  </div>
+		</div>
+
+		<div class="form-group">
+		  <b>Tema</b>
+		  <div class="input-group">
+		    <div class="input-group-addon"><i class="fa fa-fw fa-eyedropper"></i></div>
+		    <input class="form-control" type="color"
+			   value="#337AB7" name="color" />
+		  </div>
+		</div>
+
+		<div class="form-group text-right">
+		  <input class="btn btn-primary" type="submit" value="Enviar" />
+		</div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+      </form>
+
+    </div>
+  </body>
+
+</html>
+
+<!--
+    Local Variables:
+    truncate-lines: true
+    End:
+  -->
