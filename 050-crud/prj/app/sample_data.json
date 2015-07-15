@@ -1,0 +1,38 @@
+[
+{
+    "fields": {
+        "brand": "Peugeout",
+        "model": "206",
+	"year": 2001,
+	"plate": "5443 BKZ"
+    },
+    "model": "app.vehicle"
+},
+{
+    "fields": {
+        "brand": "Toyota",
+        "model": "Corolla",
+	"year": 2002,
+	"plate": "4568 ADC"
+    },
+    "model": "app.vehicle"
+},
+{
+    "fields": {
+        "brand": "Wolkswagen",
+        "model": "Touareg",
+	"year": 2005,
+	"plate": "4685 ABG"
+    },
+    "model": "app.vehicle"
+},
+{
+    "fields": {
+        "brand": "Renault",
+        "model": "Scenic Dynamique",
+	"year": 2008,
+	"plate": "4583 GHS"
+    },
+    "model": "app.vehicle"
+}
+]

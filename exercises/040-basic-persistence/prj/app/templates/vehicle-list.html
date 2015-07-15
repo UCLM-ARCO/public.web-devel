@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Vehicle List</h2>
+<br>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Plate</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+
+  {% for v in vehicles %}
+  <tr>
+    <td>{{ v.brand }}</td>
+    <td>{{ v.model }}</td>
+    <td>{{ v.plate }}</td>
+    <td>{{ v.year }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

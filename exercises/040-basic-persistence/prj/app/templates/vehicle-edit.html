@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if status == 'added' %}
+<div class="alert alert-success" role="alert" style="margin-top: 20px">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <b>Note:</b> the vehicle was added successfully!
+</div>
+{% endif %}
+
+<h2>Add new vehicle</h2>
+
+<form method="POST" action="/vehicle/create/">
+  {% csrf_token %}
+
+  <div class="row">
+    <div class="col-sm-4">
+
+      {{ form }}
+
+    </div>
+  </div>
+
+  <input class="btn btn-primary" type="submit" style="margin-top: 20px" />
+
+</form>
+
+{% endblock %}
