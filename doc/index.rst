@@ -18,6 +18,28 @@ Contents:
    simple-forms.rst
    bootstrap-forms.rst
    basic-persistence.rst
+   crud.rst
+   crud-ModelForm.rst
+   crud-generic-views.rst
+   rest.rst
+   angular-sync.rst
+
+..
+   angular-async.rst
+   angular-async-rest.rst
+   browser-polling.rst
+   browser-polling-rest.rst
+   server-push.rst
+   basic-auth.rst
+   google-charts.rst
+   google-charts-dynamic.rst
+   open-layers.rst
+   ol-markers.rst
+   testing-jasmine.rst
+   testing-karma.rst
+   testing-e2e-protractor.rst
+
+
 
 
 Indices and tables

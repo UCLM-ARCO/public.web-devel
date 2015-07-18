@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<script type="text/javascript">
+    function on_create() {
+        console.log("on create");
+	location.href = "/vehicle/create/";
+    }
+
+    function on_update(plate) {
+	console.log("on edit", plate);
+	location.href = "/vehicle/" + plate + "/update/";
+    }
+
+    function on_delete(plate) {
+        console.log("on delete", plate);
+        if (window.confirm("Are you sure?")) {
+    	   location.href = "/vehicle/" + plate + "/delete/";
+    	}
+    }
+
+    function on_generate_file(plate) {
+	console.log("on generate file", plate);
+	location.href = "/vehicle/" + plate + "/gen-file/";
+    }
+</script>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <i class="fa fa-3x fa-fw fa-car text-danger"></i>
+    <h2 style="margin-left: 20px; display: inline; vertical-align: super">House of Cars</h2>
+
+      <div class="pull-right">
+        <button class="btn btn-primary" style="vertical-align: middle"
+	  onClick="on_create()"> <i class="fa fa-plus"> Create</i>
+	</button>
+      </div>
+
+  </div>
+  <div class="panel-body">
+
+    <table class="table">
+      <thead>
+	<tr>
+	  <th>#</th>
+	  <th>Plate</th>
+	  <th>Brand</th>
+	  <th>Model</th>
+	  <th>Year</th>
+	  <th>
+	  </th>
+	</tr>
+      </thead>
+      <tbody>
+
+	{% if not vehicle_list %}
+	<tr>
+	  <td colspan="10" class="text-center"><i>No items to show</i></td>
+	</tr>
+	{% else %}
+
+	{% for vehicle in vehicle_list %}
+	<tr>
+	  <td>{{ forloop.counter }}</td>
+	  <td>{{ vehicle.plate }}</td>
+	  <td>{{ vehicle.brand }}</td>
+	  <td>{{ vehicle.model }}</td>
+	  <td>{{ vehicle.year }}</td>
+	  <td>
+	    <div class="pull-right">
+
+	      <div class="btn-group btn-group-sm">
+		<button class="btn btn-default" title="edit"
+			onClick="on_update('{{ vehicle.plate }}')">
+		  <i class="fa fa-edit"></i>
+		</button>
+		<button class="btn btn-default" title="generate raw file"
+			onClick="on_generate_file('{{ vehicle.plate }}')">
+		  <i class="fa fa-file-text-o text-primary"></i>
+		</button>
+		<button class="btn btn-default" title="delete"
+			onClick="on_delete('{{ vehicle.plate }}')">
+		  <i class="fa fa-times text-danger"></i>
+		</button>
+	      </div>
+
+	    </div>
+
+	  </td>
+	</tr>
+	{% endfor %}
+	{% endif %}
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+{% endblock %}
