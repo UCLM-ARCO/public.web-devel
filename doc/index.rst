@@ -23,12 +23,12 @@ Contents:
    crud-generic-views.rst
    rest.rst
    angular-sync.rst
-
-..
    angular-async.rst
    angular-async-rest.rst
    browser-polling.rst
    browser-polling-rest.rst
+
+..
    server-push.rst
    basic-auth.rst
    google-charts.rst
