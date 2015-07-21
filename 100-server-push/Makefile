@@ -1,5 +1,6 @@
 # -*- mode: makefile-gmake; coding: utf-8 -*-
 
+.ONESHELL:
 PRJ     = prj
 FIXTURE = eventlog/sample_data.json
 
@@ -8,15 +9,15 @@ all:
 run-from-scratch: clean setup run
 
 setup:
-	@cd $(PRJ); \
-	./manage.py makemigrations; \
-	./manage.py migrate; \
+	@cd $(PRJ)
+	./manage.py makemigrations
+	./manage.py migrate
 	./manage.py loaddata $(FIXTURE)
 
 run:
-	@cd $(PRJ); \
-	export PYTHONPATH=$$(pwd); \
-	gunicorn --bind 0.0.0.0:8000 --reload -k prj.wsgi.Worker prj.wsgi
+	@cd $(PRJ)
+	export PYTHONPATH=$$(pwd)
+	gunicorn --reload -k prj.wsgi.Worker prj.wsgi
 
 clean:
 	$(RM) $(PRJ)/db.sqlite3
@@ -27,9 +28,9 @@ remove-fixtures:
 	$(RM) -v $(PRJ)/$(FIXTURE)
 
 populate-db: remove-fixtures clean setup
-	@cd $(PRJ); \
-	export DJANGO_SETTINGS_MODULE=prj.settings; \
-	./populate-db.py; \
+	@cd $(PRJ)
+	export DJANGO_SETTINGS_MODULE=prj.settings
+	./populate-db.py
 	./manage.py dumpdata --format json --indent 4 eventlog > $(FIXTURE)
 
 test:
