@@ -27,9 +27,9 @@ Contents:
    angular-async-rest.rst
    browser-polling.rst
    browser-polling-rest.rst
+   server-push.rst
 
 ..
-   server-push.rst
    basic-auth.rst
    google-charts.rst
    google-charts-dynamic.rst
