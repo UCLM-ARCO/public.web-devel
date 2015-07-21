@@ -1,0 +1,70 @@
+[
+{
+    "fields": {
+        "name": "Peugeout"
+    },
+    "model": "app.brand",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "Toyota"
+    },
+    "model": "app.brand",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "Wolkswagen"
+    },
+    "model": "app.brand",
+    "pk": 3
+},
+{
+    "fields": {
+        "name": "Renault"
+    },
+    "model": "app.brand",
+    "pk": 4
+},
+{
+    "fields": {
+        "plate": "5443 BKZ",
+        "brand": 1,
+        "model": "206",
+        "year": 2001
+    },
+    "model": "app.vehicle",
+    "pk": 1
+},
+{
+    "fields": {
+        "plate": "4568 ADC",
+        "brand": 2,
+        "model": "Corolla",
+        "year": 2002
+    },
+    "model": "app.vehicle",
+    "pk": 2
+},
+{
+    "fields": {
+        "plate": "4685 ABG",
+        "brand": 3,
+        "model": "Touareg",
+        "year": 2005
+    },
+    "model": "app.vehicle",
+    "pk": 3
+},
+{
+    "fields": {
+        "plate": "4583 GHS",
+        "brand": 4,
+        "model": "Scenic Dynam",
+        "year": 2008
+    },
+    "model": "app.vehicle",
+    "pk": 4
+}
+]

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Position Log Viewer{% endblock %}
+
+{% block head %}
+<script src="{% static 'js/app.js' %}"></script>
+<script>
+
+PositionLogApp.controller("LogViewCtrl", function($scope) {
+    $scope.flights = [
+	{% for f in flights %}
+	{
+	    number: "{{ f.number }}",
+	    uav: {
+		name: "{{ f.uav.name }}",
+            },
+	},
+	{% endfor %}
+    ];
+});
+
+PositionLogApp.controller("LegendCtrl", function($scope) {
+    $scope.states = [
+	{color: "red", text: "Complete Failure"},
+	{color: "orange", text: "Flight has Issues"},
+	{color: "green", text: "Successfull Flight"},
+    ];
+});
+
+</script>
+{% endblock %}
+
+{% block content %}
+
+<div ng-app="PositionLogApp">
+
+  <div ng-controller="LogViewCtrl">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+	<i class="fa fa-3x fa-fw fa-plane text-primary"></i>
+	<h2 style="margin-left: 20px; display: inline">Flight List</h2>
+      </div>
+
+      <div class="panel-body">
+	<table class="table" style="margin-bottom: 0px">
+	  <thead>
+	    <tr>
+	      <th>#</th>
+	      <th>Flight Number</th>
+	      <th>UAV</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr ng-repeat="f in flights">
+	      <td>[[ $index+1 ]]</td>
+	      <td>[[ f.number ]]</td>
+	      <td>[[ f.uav.name ]]</td>
+	    </tr>
+	  </tbody>
+	</table>
+      </div>
+    </div>
+
+  </div>
+
+  <div ng-controller="LegendCtrl" class="text-center">
+    <table class="table" style="margin-top: 30px">
+      <tr>
+	<td ng-repeat="s in states">
+	  <i class="fa fa-square fa-2x" style="color: [[ s.color ]]"></i>
+	  <span style="vertical-align: super">&nbsp;[[ s.text ]]</span>
+	</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+{% endblock %}

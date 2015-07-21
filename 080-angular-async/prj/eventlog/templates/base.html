@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {% block title %} Example {% endblock %}
+    </title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+
+    {% block head %}
+    {% endblock %}
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-primary navbar-fixed-top">
+      <div class="container-fluid">
+
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed"
+		  data-toggle="collapse" data-target="#main-navbar-collapse"
+		  aria-expanded="false">
+	    <i class="icon-bar fa fa-lg fa-bars"></i>
+	  </button>
+	  <a class="navbar-brand" href="/">
+            <i class="fa fa-lg fa-skyatlas fa-inverse"></i>
+	  </a>
+	</div>
+
+	<div class="collapse navbar-collapse" id="main-navbar-collapse">
+	  <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Eventlog</a></li>
+	  </ul>
+	</div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+
+  </body>
+</html>
+
+<!--
+    Local Variables:
+    truncate-lines: true
+    End:
+  -->

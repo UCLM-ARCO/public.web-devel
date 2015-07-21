@@ -74,6 +74,7 @@ necesario, pero heredarán el resto de la plantilla.
 .. literalinclude:: ../040-basic-persistence/prj/app/templates/base.html
    :linenos:
    :language: html
+   :end-before: <!--
 
 La plantilla ``vehicle-edit.html`` hereda de ``base.html`` y redefine el bloque
 ``content``. La plantilla incluye un aviso si el elemento ``added`` está definido. Observe

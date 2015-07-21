@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if status == 'added' %}
+<div class="alert alert-success" role="alert" style="margin-top: 20px">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <b>Note:</b> the vehicle was added successfully!
+</div>
+{% endif %}
+
+<form method="POST" action="{{ next }}">
+  {% csrf_token %}
+
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6">
+
+      <div class="panel panel-default">
+	<div class="panel-heading">
+	  <i class="fa fa-3x fa-fw fa-edit text-danger"></i>
+	  <h2 style="margin-left: 20px; display: inline; vertical-align: super">
+	    Edit vehicle</h2>
+	</div>
+	<div class="panel-body">
+	  {{ form }}
+	  <div class="pull-right">
+	    <input class="btn btn-default" type="button" value="Cancel"
+		   style="margin-top: 20px; width: 70px"
+		   onClick="window.history.back()"/>
+	    <input class="btn btn-primary" type="submit" value="OK"
+		   style="margin-top: 20px; width: 70px" />
+	  </div>
+	</div>
+      </div>
+
+    </div>
+  </div>
+
+
+</form>
+
+{% endblock %}

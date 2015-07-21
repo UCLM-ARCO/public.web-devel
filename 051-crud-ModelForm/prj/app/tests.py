@@ -49,7 +49,7 @@ class FormTests(TestCase):
         v1 = Vehicle(**self.params)
         v1.save()
 
-        self.assertEqual(len(Vehicle.objects.all()), 1)
+        self.assertEqual(Vehicle.objects.all().count(), 1)
 
         c = Client()
         response = c.post("/vehicle/create/", self.params)
@@ -61,7 +61,7 @@ class FormTests(TestCase):
 
         import factory
 
-        class VehicleStub(factory.django.DjangoModelFactory):
+        class VehicleFactory(factory.django.DjangoModelFactory):
             class Meta:
                 model = Vehicle
 
@@ -70,7 +70,7 @@ class FormTests(TestCase):
             plate = factory.Sequence(lambda n: "ABC {:04d}".format(n))
             year = 2015
 
-        vehicles = [VehicleStub(), VehicleStub(), VehicleStub()]
+        vehicles = [VehicleFactory() for x in range(3)]
 
         c = Client()
         response = c.post("/vehicle/list/")
