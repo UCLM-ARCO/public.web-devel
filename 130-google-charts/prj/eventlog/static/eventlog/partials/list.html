@@ -1,0 +1,59 @@
+<div ng-controller="EventLogListCtrl">
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 style="margin-top: 5px">Flight List</h3>
+      <hr>
+
+      <div ng-if="!flights" class="text-center" style="padding: 20px 20px">
+	<i>No flights available. Please, reload this page.</i>
+      </div>
+
+      <div ng-if="flights">
+	<table class="table" style="margin-bottom: 0px">
+	  <thead>
+	    <tr>
+	      <th>#</th>
+	      <th>Flight Number</th>
+	      <th>UAV</th>
+	      <th class="text-center">Status</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr ng-repeat="f in flights">
+	      <td>
+		<span class="marker marker-ok"></span>
+		[[ $index+1 ]]
+	      </td>
+	      <td>[[ f.number ]]</td>
+	      <td>
+		<a href="#uav/[[ f.uav.name ]]">[[ f.uav.name ]]</a>
+	      </td>
+	      <td class="text-center">
+		<i class="fa fa-square" style="color: [[ get_color(f.status) ]]"></i>
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+
+	<div class="text-center">
+	  <table class="table" style="margin-top: 10px; margin-bottom: 5px">
+	    <tr>
+	      <td ng-repeat="s in states">
+		<i class="fa fa-square fa-lg" style="color: [[ s.color ]]"></i>
+		<span>&nbsp;[[ s.text ]]</span>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+    Local Variables:
+      truncate-lines: true
+    End:
+-->
