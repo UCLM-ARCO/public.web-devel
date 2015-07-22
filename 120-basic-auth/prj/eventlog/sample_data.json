@@ -1,0 +1,1546 @@
+[
+{
+    "fields": {
+        "username": "user",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": false,
+        "is_staff": false,
+        "last_login": null,
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$20000$OIZ3cenhBfMr$nhsb+cP3/s3IL+NfpF69nI8L7t/Pi8v37eqgTCU73p8=",
+        "email": "user@example.com",
+        "date_joined": "2015-06-23T12:10:44.633Z"
+    },
+    "model": "auth.user",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "Berkut"
+    },
+    "model": "eventlog.uav",
+    "pk": 1
+},
+{
+    "fields": {
+        "name": "Dragonfly Tango"
+    },
+    "model": "eventlog.uav",
+    "pk": 2
+},
+{
+    "fields": {
+        "name": "Proton"
+    },
+    "model": "eventlog.uav",
+    "pk": 3
+},
+{
+    "fields": {
+        "status": 2,
+        "number": "9796-4BEC",
+        "uav": 1
+    },
+    "model": "eventlog.flight",
+    "pk": 1
+},
+{
+    "fields": {
+        "status": 1,
+        "number": "1278-4281",
+        "uav": 1
+    },
+    "model": "eventlog.flight",
+    "pk": 2
+},
+{
+    "fields": {
+        "status": 0,
+        "number": "9DEE-4768",
+        "uav": 1
+    },
+    "model": "eventlog.flight",
+    "pk": 3
+},
+{
+    "fields": {
+        "status": 2,
+        "number": "3D32-4751",
+        "uav": 1
+    },
+    "model": "eventlog.flight",
+    "pk": 4
+},
+{
+    "fields": {
+        "status": 0,
+        "number": "091B-42FE",
+        "uav": 1
+    },
+    "model": "eventlog.flight",
+    "pk": 5
+},
+{
+    "fields": {
+        "status": 0,
+        "number": "441B-4E25",
+        "uav": 2
+    },
+    "model": "eventlog.flight",
+    "pk": 6
+},
+{
+    "fields": {
+        "status": 0,
+        "number": "F008-42C0",
+        "uav": 2
+    },
+    "model": "eventlog.flight",
+    "pk": 7
+},
+{
+    "fields": {
+        "status": 1,
+        "number": "ADC3-4AA5",
+        "uav": 2
+    },
+    "model": "eventlog.flight",
+    "pk": 8
+},
+{
+    "fields": {
+        "status": 1,
+        "number": "4149-4673",
+        "uav": 2
+    },
+    "model": "eventlog.flight",
+    "pk": 9
+},
+{
+    "fields": {
+        "status": 1,
+        "number": "F82C-47D7",
+        "uav": 2
+    },
+    "model": "eventlog.flight",
+    "pk": 10
+},
+{
+    "fields": {
+        "status": 1,
+        "number": "5270-46BF",
+        "uav": 3
+    },
+    "model": "eventlog.flight",
+    "pk": 11
+},
+{
+    "fields": {
+        "status": 1,
+        "number": "CDEC-4F92",
+        "uav": 3
+    },
+    "model": "eventlog.flight",
+    "pk": 12
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:44.965Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 1
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:45.115Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 2
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:45.299Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 3
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:45.483Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 4
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:45.651Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 5
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:45.818Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 6
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:45.985Z",
+        "altitude": 100,
+        "flight": 1,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 7
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:46.288Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 8
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:46.472Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 9
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:46.622Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 10
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:46.773Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 11
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:46.924Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 12
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:47.108Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 13
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:47.292Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 14
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:47.492Z",
+        "altitude": 100,
+        "flight": 2,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 15
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:47.744Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 16
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:47.911Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 17
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:48.112Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 18
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:48.312Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 19
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:48.481Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 20
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:48.665Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 21
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:48.849Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 22
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:49.058Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 23
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:49.259Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 24
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:49.468Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 25
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:20:49.635Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.096864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 26
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:21:49.819Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.0868640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 27
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:22:50.011Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.076864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 28
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:23:50.204Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.0668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 29
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:24:50.396Z",
+        "altitude": 100,
+        "flight": 3,
+        "longitude": -3.056864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 30
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:50.640Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 31
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:50.857Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 32
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:51.041Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 33
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:51.242Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 34
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:51.426Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 35
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:51.593Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 36
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:51.802Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 37
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:51.987Z",
+        "altitude": 100,
+        "flight": 4,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 38
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:52.263Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 39
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:52.455Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 40
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:52.639Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 41
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:52.823Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 42
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:53.025Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 43
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:53.192Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 44
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:53.376Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 45
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:53.568Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 46
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:53.761Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 47
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:53.945Z",
+        "altitude": 100,
+        "flight": 5,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 48
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:54.288Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 49
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:54.497Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 50
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:54.664Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 51
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:54.832Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 52
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:54.999Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 53
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:55.201Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 54
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:55.401Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 55
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:55.619Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 56
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:55.836Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 57
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:56.053Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 58
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:20:56.237Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.096864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 59
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:21:56.405Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.0868640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 60
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:22:56.572Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.076864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 61
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:23:56.739Z",
+        "altitude": 100,
+        "flight": 6,
+        "longitude": -3.0668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 62
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:10:56.999Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 63
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:57.183Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 64
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:57.385Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 65
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:57.602Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 66
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:57.828Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 67
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:58.045Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 68
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:58.254Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 69
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:58.438Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 70
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:58.622Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 71
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:58.790Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 72
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:20:58.974Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.096864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 73
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:21:59.149Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.0868640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 74
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:22:59.333Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.076864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 75
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:23:59.534Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.0668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 76
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:24:59.753Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.056864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 77
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:25:59.987Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.0468640000000002
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 78
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:27:00.237Z",
+        "altitude": 100,
+        "flight": 7,
+        "longitude": -3.036864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 79
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:00.513Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 80
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:00.681Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 81
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:00.890Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 82
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:01.151Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 83
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:01.335Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 84
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:01.519Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 85
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:01.704Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 86
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:01.888Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 87
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:02.055Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 88
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:20:02.223Z",
+        "altitude": 100,
+        "flight": 8,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 89
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:02.516Z",
+        "altitude": 100,
+        "flight": 9,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 90
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:02.691Z",
+        "altitude": 100,
+        "flight": 9,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 91
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:02.900Z",
+        "altitude": 100,
+        "flight": 9,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 92
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:03.101Z",
+        "altitude": 100,
+        "flight": 9,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 93
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:03.301Z",
+        "altitude": 100,
+        "flight": 9,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 94
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:03.611Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 95
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:03.845Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 96
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:04.022Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 97
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:04.189Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 98
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:04.373Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 99
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:04.557Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 100
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:04.733Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 101
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:04.933Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 102
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:05.151Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 103
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:20:05.351Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 104
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:21:05.585Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.096864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 105
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:22:05.836Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.0868640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 106
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:23:06.012Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.076864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 107
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:24:06.212Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.0668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 108
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:25:06.389Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.056864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 109
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:26:06.590Z",
+        "altitude": 100,
+        "flight": 10,
+        "longitude": -3.0468640000000002
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 110
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:06.958Z",
+        "altitude": 100,
+        "flight": 11,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 111
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:07.175Z",
+        "altitude": 100,
+        "flight": 11,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 112
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:07.359Z",
+        "altitude": 100,
+        "flight": 11,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 113
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:07.560Z",
+        "altitude": 100,
+        "flight": 11,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 114
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:07.752Z",
+        "altitude": 100,
+        "flight": 11,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 115
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:11:08.012Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.196864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 116
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:12:08.196Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.1868640000000004
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 117
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:13:08.396Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.176864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 118
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:14:08.605Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.1668640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 119
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:15:08.807Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.156864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 120
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:16:09.025Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.1468640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 121
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:17:09.225Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.136864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 122
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:18:09.426Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.1268640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 123
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:19:09.627Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.116864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 124
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:20:09.844Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.1068640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 125
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:21:10.078Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.096864
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 126
+},
+{
+    "fields": {
+        "latitude": 41.407502,
+        "timestamp": "2015-06-23T12:22:10.312Z",
+        "altitude": 100,
+        "flight": 12,
+        "longitude": -3.0868640000000003
+    },
+    "model": "eventlog.trackpoint",
+    "pk": 127
+}
+]

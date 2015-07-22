@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="text-center">
+  <h1>Welcome to our <b>UAV Angar!</b></h1>
+</div>
+
+{% if not user.is_authenticated %}
+<div class="text-center" style="color: gray">
+  Please, <a href="/accounts/login/?next=/">login</a> here.
+</div>
+{% endif %}
+
+<br><br>
+<div class="row">
+  {% for uav in uav_list %}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="{% static 'home/images' %}/{{ uav.name }}.jpg"
+	   style="width: 128px; height: 128px"
+	   onerror="this.src = '{% static 'home/images' %}/missing.png'">
+      <div class="caption text-center"
+	   style="border-top: 1px solid green;
+		  background-color: #eee">
+        <h4>{{ uav.name }}</h4>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
