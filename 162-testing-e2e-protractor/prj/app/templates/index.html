@@ -1,0 +1,52 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+
+    <script src="{% static 'js/app.js' %}"></script>
+
+  </head>
+  <body ng-app="app" ng-controller="ctrl">
+    <div class="container" style="padding-top: 20px">
+
+      <div ng-if="error" class="alert alert-danger">
+	[[ error ]]
+      </div>
+
+      <form method="POST" action="/">
+	{% csrf_token %}
+
+	<div class="input-group">
+	  <input class="form-control" type="text" name="item"
+		 placeholder="Item to add" />
+	  <span class="input-group-btn">
+	    <button class="btn btn-primary">Insert</button>
+	  </span>
+	</div>
+      </form>
+
+      <div class="panel panel-default"
+	   style="padding-top: 10px; margin-top: 20px; min-height: 200px">
+	<p ng-repeat="i in items track by $index" style="margin-left: 10px">
+	  [[ i.content ]]
+	</p>
+      </div>
+
+    </div>
+  </body>
+</html>
+
+<!--
+    Local Variables:
+      truncate-lines: true
+    End:
+  -->

@@ -26,7 +26,6 @@ def tilejson(request):
     # OS3.TileJSON usually requires a JSONP response
     data = json.dumps(retval)
     callback = request.GET.get('callback', None)
-    print "callback is", callback
     if callback:
         data = "{}({})".format(callback, data)
         return HttpResponse(data, "text/javascript")

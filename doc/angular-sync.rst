@@ -23,6 +23,11 @@ URLS
    :lines: 16-
 
 
+[``prj/eventlog/urls.py``]
+
+.. literalinclude:: ../070-angular-sync/prj/eventlog/urls.py
+
+
 Vistas
 ======
 
