@@ -13,7 +13,7 @@ test: LOG = /tmp/course-test.log
 test:
 	@> $(LOG)
 	for d in $(examples); do
-	  make -C $$d test >> $(LOG) 2>&1
+	  $(MAKE) -C $$d test >> $(LOG) 2>&1
 	  echo -n .
 	done
 	echo
@@ -24,4 +24,7 @@ test:
 clean:
 	find -name "*.pyc" -delete
 	find -name "*~" -delete
+	for d in $(examples); do
+	  $(MAKE) -C $$d clean
+	done
 	$(MAKE) -C doc clean
