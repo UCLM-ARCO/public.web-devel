@@ -1,0 +1,80 @@
+<div ng-controller="UavCtrl">
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 style="margin-top: 5px">UAV Profile</h3>
+      <hr>
+
+      <div class="row">
+	<div class="col-sm-4 col-md-3">
+	  <div class="thumbnail">
+	    <img src="/static/home/images/[[ uav.name ]].jpg"
+		 style="width: 96px; height: 96px"
+		 onerror="this.src = '/static/home/images/missing.png'">
+	    <div class="caption text-center"
+		 style="border-top: 1px solid green;
+			background-color: #eee">
+              <h4>[[ uav.name ]]</h4>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="col-sm-8 col-md-9">
+	  <div class="row" ng-repeat="item in fields">
+	    <div class="col-xs-4"><b>[[ item.label ]]</b></div>
+	    <div class="col-xs-8">[[ item.value ]]</div>
+	  </div>
+
+	  <div class="row">
+	    <div class="col-xs-4">
+	      <b style="border-bottom: 1px solid green">OK</b> |
+	      <b style="border-bottom: 1px solid orange">Issue</b> |
+	      <b style="border-bottom: 1px solid red">Fail</b>:
+	    </div>
+	    <div class="col-xs-8">
+	      <div ng-show="uav.flights.length">
+		<div class="progress">
+		  <div class="progress-bar progress-bar-success"
+		       style="width: [[ flights_ok ]]%">
+		  [[ uav_flight_status[0] ]]</div>
+		  <div class="progress-bar progress-bar-warning"
+		       style="width: [[ flights_issue ]]%">
+		  [[ uav_flight_status[1] ]]</div>
+		  <div class="progress-bar progress-bar-danger"
+		       style="width: [[ flights_fail ]]%">
+		  [[ uav_flight_status[2] ]]</div>
+		</div>
+	      </div>
+	      <div ng-hide="uav.flights.length">N/A</div>
+	    </div>
+	  </div>
+
+	</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 style="margin-top: 5px">Traveled Distance</h3>
+
+      <div id="chart-distance"></div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 style="margin-top: 5px">UAV Usage</h3>
+
+      <div id="chart-usage"></div>
+    </div>
+  </div>
+
+</div>
+
+<!--
+    Local Variables:
+      truncate-lines: true
+    End:
+-->

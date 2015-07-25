@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}UAV Ground Station{% endblock%}
+
+{% block head %}
+<link href="http://openlayers.org/en/v3.6.0/css/ol.css" type="text/css" rel="stylesheet">
+
+<script src="http://openlayers.org/en/v3.6.0/build/ol.js" type="text/javascript"></script>
+<script src="{% static 'maps/js/app.js' %}" type="text/javascript"></script>
+{% endblock %}
+
+{% block content %}
+
+<div id="map" style="height: 400px; width: 100%">
+</div>
+
+{% endblock %}
