@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-6">
+
+    <div class="text-center">
+      {% if form.errors %}
+      <div class="alert alert-danger">
+	Your username and password didn't match. Please try again.
+      </div>
+      {% endif %}
+
+      <h3>Please login to see this page.</h3>
+    </div>
+
+    <br>
+    <div class="well" style="background-color: white">
+      <form method="post" action="{% url 'django.contrib.auth.views.login' %}">
+	{% csrf_token %}
+
+	<div class="form-group">
+	  {{ form.username.label_tag }}
+	  <input class="form-control"
+		 type="text"
+		 id="{{ form.username.id_for_label }}"
+		 name="{{ form.username.name }}">
+	</div>
+
+	<div class="form-group">
+	  {{ form.password.label_tag }}
+	  <input class="form-control"
+		 type="password"
+		 id="{{ form.password.id_for_label }}"
+		 name="{{ form.password.name }}">
+	</div>
+
+	<div class="text-center">
+	  Did not have an account?
+	  <a href="/accounts/register/">Register</a> now!
+	</div>
+
+	<hr />
+	<div class="text-right">
+	  <input class="btn btn-themed" type="submit" value="login"
+		 style="width: 100px"/>
+	</div>
+	<input type="hidden" name="next" value="{{ next }}" />
+
+      </form>
+    </div>
+
+    <div class="text-center">
+      <small style="color: gray">Credentials: <b>user / secret</b> </small>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

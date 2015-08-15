@@ -33,6 +33,8 @@ Contents:
    google-charts-dynamic.rst
    open-layers.rst
    ol-markers.rst
+   angular-directives.rst
+   canvas.rst
    testing-jasmine.rst
    testing-karma.rst
    testing-e2e-protractor.rst

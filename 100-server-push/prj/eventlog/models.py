@@ -2,7 +2,7 @@
 
 from django.db import models, connections
 
-
+# requried hack if you use gunicorn + sqlite
 for conn in connections.all():
     if conn.vendor == 'sqlite':
         conn.allow_thread_sharing = True

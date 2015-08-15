@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}UAV Ground Station{% endblock%}
+
+{% block head %}
+<script src="{% static 'eventlog/js/app.js' %}"></script>
+<script src="{% static 'eventlog/js/controllers.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div ng-app="EventLogApp">
+
+  <div ng-show="error" class="alert alert-danger" role="alert">
+    <button type="button" class="close" ng-click="error = null">
+      <i class="fa fa-times"></i></button>
+    <strong>Error!</strong>
+    [[ error ]]
+    </div>
+
+  <ng-view>
+  </ng-view>
+
+</div>
+{% endblock %}
+
+<!--
+    Local Variables:
+      truncate-lines: true
+    End:
+->

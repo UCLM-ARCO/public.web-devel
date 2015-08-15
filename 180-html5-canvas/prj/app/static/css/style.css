@@ -1,0 +1,11 @@
+/* -*- mode: css; coding: utf-8 -*- */
+
+body {
+    background-color: #FDFFFA;
+}
+
+.blackboard {
+    border: 7px solid #E45917;
+    background-color: #25271B;
+    cursor: crosshair;
+}

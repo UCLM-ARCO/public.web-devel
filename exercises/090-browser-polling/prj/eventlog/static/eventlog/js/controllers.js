@@ -3,9 +3,9 @@
 EventLogApp.controller("EventLogListCtrl", function($rootScope, $scope, $http, $interval) {
 
     $scope.states = [
-	{color: "red", text: "Complete Failure"},
-	{color: "orange", text: "Flight has Issues"},
 	{color: "green", text: "Successfull Flight"},
+	{color: "orange", text: "Flight has Issues"},
+	{color: "red", text: "Complete Failure"},
     ];
 
     $scope.get_color = function(state) {

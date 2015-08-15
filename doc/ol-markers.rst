@@ -4,6 +4,7 @@ OpenLayers markers
 
 En este ejemplo se muestra cómo utilizar "overlays" y marcadores sobre un canvas OpenLayers.
 
+.. image:: figures/ol-markers.png
 
 URLS
 ====

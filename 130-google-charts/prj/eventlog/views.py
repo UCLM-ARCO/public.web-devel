@@ -84,11 +84,9 @@ def get_uav_profile(request, name):
         return HttpResponseNotFound()
 
     flights = []
-    for f in models.Flight.objects.filter(uav=uav):
-        points = [
-            p.timestamp.strftime("%s")
-            for p in models.TrackPoint.objects.filter(flight=f)
-        ]
+    for f in uav.flight_set.all():
+        points = [p.timestamp.strftime("%s")
+                  for p in f.trackpoint_set.filter(flight=f)]
 
         flights.append({
             'number': f.number,

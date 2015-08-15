@@ -4,6 +4,9 @@ OpenLayers
 
 Este ejemplo añade una nueva aplicación Django que demuestra el uso de OpenLayers para crear una imagen teselada con zoom de varios niveles.
 
+.. image:: figures/open-layers.png
+
+
 
 URLS
 ====

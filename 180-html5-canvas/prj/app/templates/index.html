@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div ng-controller="ctrl" class="container" style="padding-top: 20px">
+
+  <welcome></welcome>
+
+  <div profile="leo" class="well" id="well">
+    <span style="padding-right: 15px">
+      <b>Name: </b>[[ user.name ]] [[ user.surname ]]</span>
+    <span style="padding-right: 15px">
+      <b>Age:</b> [[ user.age ]]</span>
+    <span style="padding-right: 15px">
+      <b>Occupation:</b> [[ user.occupation ]]</span>
+  </div>
+
+  <canvas id="canvas" height="500" class="blackboard">
+  </canvas>
+
+  <div class="text-center" style="padding: 15px">
+    <button style="width: 100px" class="btn btn-primary" onClick="clearCanvas()">
+      Clear</button>
+  </div>
+
+</div>
+{% endblock %}

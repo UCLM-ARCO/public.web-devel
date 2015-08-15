@@ -8,3 +8,6 @@ class Vehicle(models.Model):
     model = models.CharField(max_length=30, null=False)
     plate = models.CharField(max_length=12, unique=True, primary_key=True)
     year = models.IntegerField(null=False)
+
+    def __unicode__(self):
+        return u"{} {} ({})".format(self.brand, self.model, self.plate)

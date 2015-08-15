@@ -1,0 +1,9 @@
+/* -*- mode: css; coding: utf-8 -*- */
+
+.blackboard {
+    width: 100%;
+    height: 500px;
+    border: 7px solid #E45917;
+    background-color: #25271B;
+    cursor: crosshair;
+}
